@@ -7,13 +7,25 @@
 
 }
 
-.wrapper h1 {
-    top: 5%;
-
+.wrapper .image-space {
+    bottom: 3px;
     font-size: 30px;
     text-align: center;
     color: #1A7893;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 
+
+.image-style{
+   
+    float: left;
+    margin: 5px;
+    bottom: 50%;
+     width:70px;
+     
 }
 .wrapper h2{
     font-size: 19px;
@@ -39,7 +51,7 @@ text-align: center;
     background: transparent;
     border-radius: 12px;
     padding: 20px 45px 20px 20px;
-    border: 2px solid rgba(255, 255, 255, .2);
+    border: 2px solid black;
     font-size: 16px;
  
 
@@ -142,6 +154,8 @@ text-align: center;
 }
 .or-text{
     background: white;
+    z-index: 2;
+    padding: 5px;
 }
 .close-icon{
     position: relative;

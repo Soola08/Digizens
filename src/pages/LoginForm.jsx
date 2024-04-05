@@ -4,19 +4,20 @@ import { IoEyeOffSharp} from "react-icons/io5";
 import { FaFacebook } from "react-icons/fa6";
 import { FcGoogle} from "react-icons/fc";
 import { IoIosClose } from "react-icons/io";
-import Logo from "../../img/Logo.png";
+import Logo from "../img/Logo.png";
+import { Link } from 'react-router-dom';
 
 const LoginForm = () => {
 
     return (
         <div className='wrapper'>
             <form action=''>
-                <h1><img src={ Logo} alt="Description of the image" className='image-style' />
-Digizen</h1>
+                <div className='image-space'><img src={ Logo} alt="Description of the image" className='image-style' />
+Digizen</div>
                 <IoIosClose className='close-icon'/>
                 <h2>Log in</h2>
                 <div className='register-link'>
-                    <p>Don't have an account? <a href='#'>Sign up</a></p>
+                    <p>Don't have an account? <Link to='/SignUp'>Sign up</Link></p>
                 </div>
                
                 <button className='fab' type='submit'> <FaFacebook className='face-book' />Log in with Facebook</button>
@@ -38,6 +39,7 @@ Digizen</h1>
 
                 <div className="remember-forgot">
                 <label><input type='checkbox'/>Remember me </label>
+                {/* Link to the forgot password page  */}
                 <a href='#'>Forgot your password?</a>
                 </div>
 
